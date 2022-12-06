@@ -419,6 +419,43 @@ video {
   display: none;
 }
 
+h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+figure {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+ul {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+img{
+}
+
+video{
+}
+
+a {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -517,11 +554,24 @@ video {
   text-align: center;
 }
 
+.font-headline {
+  font-family: Lexend Deca, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.font-extralight {
-  font-weight: 200;
+.font-bold {
+  font-weight: 700;
+}
+
+.text-pmc-100 {
+  --tw-text-opacity: 1;
+  color: rgb(175 156 63 / var(--tw-text-opacity));
+}
+
+#vlsi.list-disc li::marker {
+  color: blue;
 }

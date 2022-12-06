@@ -1,3 +1,96 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import "./custom.css";
+
+@layer base {
+    h1{
+        @apply text-2xl;
+    }
+    h2{
+        @apply text-3xl; 
+    }
+    p{
+        @apply text-xl;
+    }
+    figure{
+        @apply text-xl; 
+    }
+    ul{
+        @apply text-xl;  
+    }
+    img{
+
+    }
+    video{
+
+    }
+    a{
+        @apply text-blue-600 underline; 
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+      }
+}
+
+@layer utilities {
+  .mid-column-md {
+    width: 700px;
+  }
+  .mid-column-lg {
+    width: 900px;
+  }
+  .mid-column-xl {
+    width: 1000px;
+  }
+  .mid-column-2xl {
+    width: 1286px;
+  }
+  .mid-home-column-md {
+    width: 700px;
+  }
+  .mid-home-column-lg {
+    width: 900px;
+  }
+  .mid-home-column-xl {
+    width: 1000px;
+  }
+  .mid-home-column-2xl {
+    width: 1024px;
+  }
+  .nav-screen {
+    width: 1366px;
+  }
+  .index-md-hero {
+    @apply bg-contain bg-right-top;
+    background-position: right -180px top;
+  }
+
+  .index-lg-hero {
+    @apply bg-contain bg-right-top;
+    background-position: right top;
+  }
+  .text-2-column {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+  .bg-campus-facilities {
+    background-color: #edf2f7;
+  }
+}
+
+#vlsi.list-disc li::marker {
+  color: blue;
+}
