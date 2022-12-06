@@ -1,96 +1,105 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./custom.css";
 
 @layer base {
-    h1{
-        @apply text-2xl;
+  h1 {
+    @apply font-normal;
+  }
+  h2 {
+    @apply text-3xl;
+  }
+  p {
+    @apply text-xl;
+  }
+  figure {
+    @apply text-xl;
+  }
+  ul li {
+    @apply text-base font-normal font-myfont;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  img {
+  }
+  video {
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+  @screen md {
+    ul li {
+      @apply px-3;
     }
-    h2{
-        @apply text-3xl; 
+    h1 {
+      font: size 48px;
+      line-height: 48px;
     }
-    p{
-        @apply text-xl;
+  }
+  @screen lg {
+    ul li {
+      @apply px-6;
     }
-    figure{
-        @apply text-xl; 
+    h1 {
+      font-size: 64px;
+      line-height: 64px;
     }
-    ul{
-        @apply text-xl;  
-    }
-    img{
-
-    }
-    video{
-
-    }
-    a{
-        @apply text-blue-600 underline; 
-    }
+  }
 }
 
 @layer components {
-    .btn-primary {
-        @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
-      }
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+  }
 }
 
 @layer utilities {
-  .mid-column-md {
-    width: 700px;
+  @screen sm {
+    .mid-home-column {
+      width: 600px;
+    }
   }
-  .mid-column-lg {
-    width: 900px;
+  @screen md {
+    .mid-home-column {
+      width: 700px;
+    }
+    .left-gap {
+      padding-left: 120px;
+    }
   }
-  .mid-column-xl {
-    width: 1000px;
+  @screen lg {
+    .mid-home-column {
+      width: 960px;
+    }
+    .left-gap {
+      padding-left: 122px;
+    }
   }
-  .mid-column-2xl {
-    width: 1286px;
+  @screen xl {
+    .mid-home-column {
+      width: 1000px;
+    }
+    .left-gap {
+      padding-left: 240px;
+    }
   }
-  .mid-home-column-md {
-    width: 700px;
+  @screen 2xl {
+    .mid-home-column {
+      width: 1200px;
+    }
+    .left-gap {
+      padding-left: 350px;
+    }
   }
-  .mid-home-column-lg {
-    width: 900px;
+  .center {
+    @apply mx-auto;
   }
-  .mid-home-column-xl {
-    width: 1000px;
+  .family {
+    font-family: "Lexend Deca", sans-serif;
   }
-  .mid-home-column-2xl {
-    width: 1024px;
+  .active {
+    @apply text-pmc-100;
   }
-  .nav-screen {
-    width: 1366px;
-  }
-  .index-md-hero {
-    @apply bg-contain bg-right-top;
-    background-position: right -180px top;
-  }
-
-  .index-lg-hero {
-    @apply bg-contain bg-right-top;
-    background-position: right top;
-  }
-  .text-2-column {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
-
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-  }
-  .bg-campus-facilities {
-    background-color: #edf2f7;
-  }
-}
-
-#vlsi.list-disc li::marker {
-  color: blue;
 }

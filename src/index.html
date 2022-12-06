@@ -5,7 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold font-headline text-center text-pmc-100">Hello world</h1>
+  <body class="font-myfont">
+    <div class="w-full">
+      <div
+        class="hidden mid-home-column md:flex center bg-blue-700 justify-between py-4"
+      >
+        <div class="flex">
+          <img alt="logo" src="/public/images/logo.svg" />
+        </div>
+        <div class="flex items-center">
+          <ul class="flex">
+            <li class="active">Home</li>
+            <li class="">History</li>
+            <li class="">Committee</li>
+            <li class="">Members</li>
+            <li class="">Facilities</li>
+            <li class="">Bookings</li>
+            <li class="bg-pmc-100 text-white">Login</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex">
+      <div class="w-1/2 flex bg-black items-center">
+        <div class="flex flex-col left-gap pr-20">
+          <h1 class="text-white">Welcome to the Parliament Members’ Club</h1>
+          <p class="text-white">
+            Parliament Members Club provides a beautiful, elegant indoor and
+            outdoor venue for your programme at a convenient cost.
+          </p>
+        </div>
+      </div>
+      <div class="w-1/2 flex">
+        <img alt="banner img" src="/public/images/banner.png" />
+      </div>
+    </div>
+    <h1 class="text-3xl font-bold font-myfont text-center text-pmc-100">
+      Hello world
+    </h1>
   </body>
 </html>
