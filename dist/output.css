@@ -421,7 +421,7 @@ video {
 
 h1 {
   font-weight: 400;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 h2 {
@@ -458,6 +458,12 @@ ul li {
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+ul li a {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  text-decoration-line: none;
 }
 
 img {
@@ -622,14 +628,6 @@ a {
   width: 2rem;
 }
 
-.w-12 {
-  width: 3rem;
-}
-
-.w-7 {
-  width: 1.75rem;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -640,11 +638,6 @@ a {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .bg-pmc-100 {
@@ -674,10 +667,6 @@ a {
 
 .pr-20 {
   padding-right: 5rem;
-}
-
-.pt-7 {
-  padding-top: 1.75rem;
 }
 
 .pt-6 {
@@ -782,7 +771,7 @@ a {
   padding-right: 2.25rem;
 }
 
-.styled-bolder{
+.styled-bolder {
   height: 4px;
   width: 80px;
 }
@@ -816,13 +805,5 @@ a {
 
   .md\:pr-0 {
     padding-right: 0px;
-  }
-
-  .md\:pt-7 {
-    padding-top: 1.75rem;
-  }
-
-  .md\:pt-0 {
-    padding-top: 0px;
   }
 }

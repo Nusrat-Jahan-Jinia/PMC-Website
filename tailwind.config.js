@@ -11,6 +11,7 @@ module.exports = {
     },
     fontFamily: {
       myfont: ["Lexend Deca", "sans-serif"],
+      headfont:["Playfair Display", "serif"]
     },
   },
   plugins: [],

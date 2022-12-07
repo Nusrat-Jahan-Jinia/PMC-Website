@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import "./custom.css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 
 @layer base {
   h1 {
     @apply font-normal;
-    font-family: "Lexend Deca", sans-serif;
+    font-family: 'Playfair Display', serif;
   }
   h2 {
     @apply text-3xl;
@@ -28,6 +29,9 @@
     @apply text-base font-normal font-myfont;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  ul li a{
+    @apply text-black no-underline
   }
   img {
   }
@@ -119,8 +123,8 @@
   .gaplr-36 {
     @apply pl-9 pr-9;
   }
-  .styled-bolder{
-   height: 4px;
-   width: 80px;
+  .styled-bolder {
+    height: 4px;
+    width: 80px;
   }
 }
