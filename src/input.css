@@ -110,8 +110,8 @@
     @apply text-pmc-100;
   }
   .gaptb-80 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .top-80 {
     margin-top: 80px;
@@ -130,5 +130,8 @@
   }
   .content-title {
     letter-spacing: 7px;
+  }
+  .graybz {
+    background-color: #f9f9f9;
   }
 }
