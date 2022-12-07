@@ -7,12 +7,19 @@
 @layer base {
   h1 {
     @apply font-normal;
+    font-family: "Lexend Deca", sans-serif;
   }
   h2 {
     @apply text-3xl;
+    font-family: "Lexend Deca", sans-serif;
+  }
+  h4 {
+    @apply text-xl;
+    font-family: "Lexend Deca", sans-serif;
   }
   p {
-    @apply text-xl;
+    @apply text-xl font-light text-black opacity-60;
+    font-family: "Lexend Deca", sans-serif;
   }
   figure {
     @apply text-xl;
@@ -101,5 +108,19 @@
   }
   .active {
     @apply text-pmc-100;
+  }
+  .gaptb-80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .top-80 {
+    margin-top: 80px;
+  }
+  .gaplr-36 {
+    @apply pl-9 pr-9;
+  }
+  .styled-bolder{
+   height: 4px;
+   width: 80px;
   }
 }
