@@ -134,4 +134,7 @@
   .graybz {
     background-color: #f9f9f9;
   }
+  .facility-border{
+    border-left: 1px solid #af9c3f;
+  }
 }
