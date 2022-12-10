@@ -137,4 +137,12 @@
   .facility-border{
     border-left: 1px solid #af9c3f;
   }
+  .header-size{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+  }
+  .left-padding-75{
+    padding-left: 75px;
+  }
 }
