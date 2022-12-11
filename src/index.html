@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+      </script>
   </head>
   <body class="font-myfont">
     <div class="w-full">
@@ -130,67 +141,214 @@
         </div>
       </div>
     </div>
-    <div class="w-full">
-      <div
-        class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0"
-      >
-      <div class="flex content-title text-pmc-100 deca-family font-bold items-center justify-center mb-10">RECENT EVENTS</div>
-      <div class="grid sm:grid-cols-3 gap-x-6">
-        <div class="group">
-          <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
-            <div class="flex">
-              <div class="flex w-full group-hover:hidden">
-                <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1.png" />
+
+  <div class="w-full pt-20">
+    <div class="flex content-title text-pmc-100 deca-family font-bold items-center justify-center mb-10">RECENT EVENTS</div>
+    
+    <div id="default-carousel" class="relative" data-carousel="static">
+     <!-- Carousel wrapper -->
+     <div class="relative overflow-hidden rounded-lg my-slider-height ">
+          <!-- Item 1 -->
+         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          
+            <div class="mid-home-column center">
+            <div class="grid sm:grid-cols-3 gap-x-6 mb-6">
+              <div class="group">
+                <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                  <div class="flex">
+                    <div class="flex w-full group-hover:hidden">
+                      <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1.png" />
+                    </div>
+                    <div class="hidden w-full group-hover:flex">
+                      <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1-color.png" />
+                    </div>
+                  </div>
+                  <div class="p-6">
+                  <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                  <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+                </div>
               </div>
-              <div class="hidden w-full group-hover:flex">
-                <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1-color.png" />
+            </div>
+            <div class="group">
+              <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                <div class="flex">
+                  <div class="flex w-full group-hover:hidden">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2.png" />
+                  </div>
+                  <div class="hidden w-full group-hover:flex">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2-color.png" />
+                  </div>
+                </div>
+                <div class="p-6">
+                <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
               </div>
             </div>
-            <div class="p-6">
-            <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
-            <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-            <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
-          </div>
-        </div>
-        
-      </div>
-      <div class="group">
-        <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
-          <div class="flex">
-            <div class="flex w-full group-hover:hidden">
-              <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2.png" />
             </div>
-            <div class="hidden w-full group-hover:flex">
-              <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2-color.png" />
+            <div class="group">
+              <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                <div class="flex">
+                  <div class="flex w-full group-hover:hidden">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3.png" />
+                  </div>
+                  <div class="hidden w-full group-hover:flex">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3-color.png" />
+                  </div>
+                </div>
+                <div class="p-6">
+                <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+              </div>
             </div>
-          </div>
-          <div class="p-6">
-          <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
-          <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-          <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
-        </div>
-      </div>
-      </div>
-      <div class="group">
-        <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
-          <div class="flex">
-            <div class="flex w-full group-hover:hidden">
-              <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3.png" />
             </div>
-            <div class="hidden w-full group-hover:flex">
-              <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3-color.png" />
             </div>
           </div>
-          <div class="p-6">
-          <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
-          <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-          <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
-        </div>
-      </div>
-      </div>
-      </div>
-    </div>
-  </div>
+          
+            
+
+         </div>
+         <!-- Item 2 -->
+         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="mid-home-column center">
+            <div class="grid sm:grid-cols-3 gap-x-6 mb-6">
+              <div class="group">
+                <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                  <div class="flex">
+                    <div class="flex w-full group-hover:hidden">
+                      <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1.png" />
+                    </div>
+                    <div class="hidden w-full group-hover:flex">
+                      <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1-color.png" />
+                    </div>
+                  </div>
+                  <div class="p-6">
+                  <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                  <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+                </div>
+              </div>
+            </div>
+            <div class="group">
+              <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                <div class="flex">
+                  <div class="flex w-full group-hover:hidden">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2.png" />
+                  </div>
+                  <div class="hidden w-full group-hover:flex">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2-color.png" />
+                  </div>
+                </div>
+                <div class="p-6">
+                <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+              </div>
+            </div>
+            </div>
+            <div class="group">
+              <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                <div class="flex">
+                  <div class="flex w-full group-hover:hidden">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3.png" />
+                  </div>
+                  <div class="hidden w-full group-hover:flex">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3-color.png" />
+                  </div>
+                </div>
+                <div class="p-6">
+                <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+         </div>
+         <!-- Item 3 -->
+         <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div class="mid-home-column center">
+            <div class="grid sm:grid-cols-3 gap-x-6 mb-6">
+              <div class="group">
+                <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                  <div class="flex">
+                    <div class="flex w-full group-hover:hidden">
+                      <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1.png" />
+                    </div>
+                    <div class="hidden w-full group-hover:flex">
+                      <img class="object-cover w-full" alt="banner img" src="/public/images/people/event1-color.png" />
+                    </div>
+                  </div>
+                  <div class="p-6">
+                  <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                  <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+                </div>
+              </div>
+            </div>
+            <div class="group">
+              <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                <div class="flex">
+                  <div class="flex w-full group-hover:hidden">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2.png" />
+                  </div>
+                  <div class="hidden w-full group-hover:flex">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event2-color.png" />
+                  </div>
+                </div>
+                <div class="p-6">
+                <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+              </div>
+            </div>
+            </div>
+            <div class="group">
+              <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
+                <div class="flex">
+                  <div class="flex w-full group-hover:hidden">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3.png" />
+                  </div>
+                  <div class="hidden w-full group-hover:flex">
+                    <img class="object-cover w-full" alt="banner img" src="/public/images/people/event3-color.png" />
+                  </div>
+                </div>
+                <div class="p-6">
+                <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
+                <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+         </div>
+     </div>
+     <!-- Slider indicators -->
+     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 indicator-button">
+         <button type="button" class="w-3 h-3 rounded-full indicator-border" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+         <button type="button" class="w-3 h-3 rounded-full indicator-border" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+         <button type="button" class="w-3 h-3 rounded-full indicator-border" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+     </div>
+     <!-- Slider controls -->
+     <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+         <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+             <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+             <span class="sr-only">Previous</span>
+         </span>
+     </button>
+     <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+         <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+             <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+             <span class="sr-only">Next</span>
+         </span>
+     </button>
+ </div>
+</div>
+</div>
   <div class="w-full">
     <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
       <div class="flex content-title text-pmc-100 deca-family font-bold mb-10">GALLERY</div>
@@ -317,12 +475,12 @@
     </div>
   </div>
   <div class="w-full">
-    <div class="flex">
-      <div class="flex w-2/4">
+    <div class="flex flex-col md:flex-row">
+      <div class="flex w-full md:w-2/4">
          <img alt="facility img" src="/public/images/people/booking-banner.png" />
       </div>
-      <div class="flex w-2/4 bg-black">
-        <div class="flex flex-col">
+      <div class="flex w-full md:w-2/4 bg-black">
+        <div class="flex flex-col p-9 md:p-9 md:left-padding-75 justify-center">
           <span class="display-family text-white header-size">Booking</span>
           <span class="display-family text-white header-size">Calendar</span>
              <div class="styled-bolder flex my-6">
@@ -330,15 +488,16 @@
               <span class="bg-green-600 flex w-8"></span>
             </div>
             <div class="flex mb-20">
-              <span class="deca-family text-xl font-normal">Select your desired date and check the availability of the best venues</span>
+              <span class="deca-family text-xl font-normal text-white">Select your desired date and check the availability of the best venues</span>
             </div>
-            <div class="flex">
-                <select>
-                  
-                </select>
-                <span class="bg-pmc-100">
-                  <p>Check availability</p>
-                </span>
+            <div class="flex flex-col">
+              <div class="w-full flex border border-gray-100 py-3">
+              <input class="flex w-full bg-black text-white text-base deca-family pl-6" type="text" id="datepicker" value="Select date">
+              </div>
+              <div class="w-full bg-pmc-100 flex border border-gray-100 py-3 mt-5">
+                <input class="flex w-full bg-pmc-100 font-bold text-white text-base deca-family pl-6" type="text" id="datepicker" value="Check availability">
+              </div>
+              <p class="text-pmc-100 text-base font-bold deca-family mt-5">Have a booking ID?</p>
             </div>
         </div>
       </div>
@@ -370,12 +529,41 @@
      <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
         <div class="grid grid-cols-4">
           <div class="flex">
-            <img alt="facility img" src="/public/images/people/history.png" />
+            <img alt="facility img" src="/public/images/logo.svg" />
           </div>
-          <div class="flex"></div>
-          <div class="flex"></div>
-          <div class="flex"></div>
+          <div class="flex">
+              <div class="flex space-x-4">
+                <div class="flex">
+                  <img alt="facility img" src="/public/images/fb.svg" />
+                </div>
+                <div class="flex">
+                  <img alt="facility img" src="/public/images/instagram.svg" />
+                </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex space-x-4">
+              <img alt="facility img" src="/public/images/phone.svg" />
+              <p class="text-white text-sm deca-facility tracking-widest">+8801876564738<p>
+            </div>
+            <div class="flex space-x-4 py-3">
+              <img alt="facility img" src="/public/images/map-marker-alt.svg" />
+              <p class="text-white text-sm deca-facility tracking-widest">Sher e bangla nagar, Dhaka 1207</p>
+            </div>
+            <div class="flex space-x-4">
+              <img alt="facility img" src="/public/images/envelope.svg" />
+              <p class="text-white text-sm deca-facility tracking-widest">Email: mpclub@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex flex-col items-end space-y-3">
+              <p class="text-white text-sm deca-facility tracking-widest">Designed & Developed by</p>
+              <img alt="facility img" src="/public/images/dsi-logo.svg" />
+          </div>
         </div>
      </div></div>
+
+
+     
+<script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
   </body>
 </html>

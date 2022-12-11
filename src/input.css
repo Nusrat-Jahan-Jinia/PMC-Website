@@ -134,15 +134,34 @@
   .graybz {
     background-color: #f9f9f9;
   }
-  .facility-border{
+  .facility-border {
     border-left: 1px solid #af9c3f;
   }
-  .header-size{
+  .header-size {
     font-size: 64px;
     font-weight: 400;
     line-height: 64px;
   }
-  .left-padding-75{
+  .left-padding-75 {
     padding-left: 75px;
   }
+  .bo-color {
+    color: #979797;
+  }
+  .para-color {
+    color: #af9c3f;
+  }
+  .my-slider-height {
+    height: 620px;
+  }
+  .indicator-border {
+    border-color: #288c56;
+    border-width: 1px;
+  }
+  .indicator-button button:active {
+    background-color: red !important;
+  }
+  /* .bg-white{
+    background-color: red !important;
+  } */
 }
