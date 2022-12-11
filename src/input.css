@@ -158,10 +158,22 @@
     border-color: #288c56;
     border-width: 1px;
   }
-  .indicator-button button:active {
-    background-color: red !important;
+  .bg-white {
+    background-color: #af9c3f !important;
   }
-  /* .bg-white{
-    background-color: red !important;
-  } */
+  .bg-white-color {
+    background-color: #f9f9f9;
+  }
+  .background-yellow {
+    background-color: #af9c3f !important;
+    border: none !important;
+  }
+  .background-black {
+    background-color: #000 !important;
+    border: none !important;
+  }
+  .font64{
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
