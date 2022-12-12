@@ -187,4 +187,7 @@
   .content-border-color {
     color: #c4c4c4;
   }
+  .pagination-bg-color{
+    background-color: white !important;
+  }
 }
