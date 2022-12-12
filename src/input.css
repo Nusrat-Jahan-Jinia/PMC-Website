@@ -113,6 +113,10 @@
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .gaptb-75 {
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
   .top-80 {
     margin-top: 80px;
   }
@@ -172,8 +176,19 @@
     background-color: #000 !important;
     border: none !important;
   }
-  .font64{
+  .font64 {
     font-size: 64px;
     line-height: 64px;
+  }
+  .committee-people {
+    width: 120px;
+    height: 120px;
+  }
+  .committee-people-common {
+    width: 80px;
+    height: 80px;
+  }
+  .content-border-color {
+    color: #c4c4c4;
   }
 }
