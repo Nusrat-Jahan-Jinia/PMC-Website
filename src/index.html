@@ -3,43 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
     <script>
       $( function() {
         $( "#datepicker" ).datepicker();
       } );
       </script>
   </head>
-  <body class="font-myfont">
+  <body>
     <div class="w-full">
-      <div class="hidden mid-home-column md:flex center justify-between py-4">
+      <div class="hidden container md:flex mx-auto justify-between py-4">
         <div class="flex">
           <img alt="logo" src="/public/images/logo.svg" />
         </div>
         <div class="flex items-center">
-          <ul class="flex">
-            <li class="active"><a href="#" class="active">Home</a></li>
-            <li class=""><a href="#">History</a></li>
-            <li class=""><a href="#">Committee</a></li>
-            <li class=""><a href="#">Members</a></li>
-            <li class=""><a href="#">Facilities</a></li>
-            <li class=""><a href="#">Bookings</a></li>
-            <li class="bg-pmc-100"><a href="#" class="text-white">Login</a></li>
+          <ul class="flex md:space-x-3 lg:space-x-6">
+            <li class="py-3"><a href="#" class="active text-base font-normal font-deca">Home</a></li>
+            <li class="py-3"><a href="#" class="text-base font-normal font-deca">History</a></li>
+            <li class="py-3"><a href="#" class="text-base font-normal font-deca">Committee</a></li>
+            <li class="py-3"><a href="#" class="text-base font-normal font-deca">Members</a></li>
+            <li class="py-3"><a href="#" class="text-base font-normal font-deca">Facilities</a></li>
+            <li class="py-3"><a href="#" class="text-base font-normal font-deca">Bookings</a></li>
+            <li class="bg-pmc-100 py-3 px-6"><a href="#" class="text-white text-base font-normal font-deca">Login</a></li>
           </ul>
         </div>
       </div>
     </div>
+    <!-- banner starts -->
     <div class="w-full flex flex-col md:flex-row">
       <div class="w-full md:w-1/2 flex bg-black items-center">
         <div class="flex flex-col left-gap p-9 md:pr-20">
           <div class="text-white font64 font-medium">Host your party at the <span class="text-pmc-100">prestigious</span> venue</div>
-          <div class="styled-bolder flex my-6">
+          <div class="h-1 w-20 flex my-6">
             <span class="bg-red-600 flex w-8"></span>
             <span class="bg-green-600 flex w-8"></span>
           </div>
@@ -59,9 +60,10 @@
         <img class="object-cover" alt="banner img" src="/public/images/banner.png" />
       </div>
     </div>
-    <div class="w-full graybz">
+    <!-- messages starts -->
+    <div class="w-full bg-zinc-50">
       <div
-        class="mid-home-column flex flex-col sm:flex-row center gaptb-80 gaplr-36 md:pl-0 md:pr-0"
+        class="container flex flex-col sm:flex-row mx-auto p-9 md:py-20"
       >
         <div class="flex w-full sm:w-1/2">
           <div class="flex">
@@ -69,43 +71,43 @@
               <img alt="banner img" src="/public/images/people/people1.png" />
             </div>
             <div class="flex flex-col">
-              <h2 class="mb-1">Message</h2>
-              <h3 class="">Honorable Presiden</h3>
+              <h2 class="mb-1 text-4xl font-display font-bold">Message</h2>
+              <h3 class="text-2xl font-display font-bold">Honorable President</h3>
             </div>
           </div>
         </div>
         <div class="flex w-full sm:w-1/2">
           <div class="flex flex-col pt-6 sm:pt-0">
-            <div class="styled-bolder flex">
+            <div class="h-1 w-20 flex">
               <span class="bg-red-600 flex w-8"></span>
               <span class="bg-green-600 flex w-8"></span>
             </div>
             <div class="pt-6 sm:pt-7">
-              <p class="mb-4">Dear Honorable Member,</p>
-              <p class="mb-4">Assalamu Alaikum.</p>
-              <p class="mb-4">
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">Dear Honorable Member,</p>
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">Assalamu Alaikum.</p>
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">
                 As President of the Parliament Members Club, it is a great honor
                 for me and the Board of Directors to welcome you to our website.
                 The Club celebrated 44 years in 2022, and as we head into the
                 new year, it is wonderful to have you all on-board to enjoy the
                 Club in all its glory.
               </p>
-              <p class="mb-4">
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">
                 I would like to thank the founding Presidents, Directors,
                 Members and Club Officials for their hard work, commitment and
                 dedication they have undertaken across the years to position the
                 Club where it stands today. I am lucky to have many past Club
                 Presidents to turn to for guidance this year.
               </p>
-              <p class="mb-4">Warm regards</p>
-              <h4 class="font-bold text-black">Mr. Noor E Alam Chowdhury</h4>
-              <p>218 Madaripur 1</p>
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">Warm regards</p>
+              <h4 class="text-xl font-deca font-bold text-black">Mr. Noor E Alam Chowdhury</h4>
+              <p class="text-xl font-deca font-normal text-black opacity-60">218 Madaripur 1</p>
             </div>
           </div>
         </div>
       </div>
       <div
-        class="mid-home-column flex flex-col sm:flex-row center gaptb-80 gaplr-36 md:pl-0 md:pr-0"
+        class="container flex flex-col sm:flex-row mx-auto pb-9 md:pb-20"
       >
         <div class="flex w-full sm:w-1/2">
           <div class="flex">
@@ -113,55 +115,52 @@
               <img alt="banner img" src="/public/images/people/people2.png" />
             </div>
             <div class="flex flex-col">
-              <h2 class="mb-1">Message</h2>
-              <h3 class="">Honorable Presiden</h3>
+              <h2 class="mb-1 text-4xl font-display font-bold">Message</h2>
+              <h3 class="text-2xl font-display font-bold">Honorable Secretary</h3>
             </div>
           </div>
         </div>
         <div class="flex w-full sm:w-1/2">
           <div class="flex flex-col pt-6 sm:pt-0">
-            <div class="styled-bolder flex">
+            <div class="h-1 w-20 flex">
               <span class="bg-red-600 flex w-8"></span>
               <span class="bg-green-600 flex w-8"></span>
             </div>
             <div class="pt-6 sm:pt-7">
-              <p class="mb-4">Dear Honorable Member,</p>
-              <p class="mb-4">Assalamu Alaikum.</p>
-              <p class="mb-4">
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">Dear Honorable Member,</p>
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">Assalamu Alaikum.</p>
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">
                 As President of the Parliament Members Club, it is a great honor
                 for me and the Board of Directors to welcome you to our website.
                 The Club celebrated 44 years in 2022, and as we head into the
                 new year, it is wonderful to have you all on-board to enjoy the
                 Club in all its glory.
               </p>
-              <p class="mb-4">
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">
                 I would like to thank the founding Presidents, Directors,
                 Members and Club Officials for their hard work, commitment and
                 dedication they have undertaken across the years to position the
                 Club where it stands today. I am lucky to have many past Club
                 Presidents to turn to for guidance this year.
               </p>
-              <p class="mb-4">Warm regards</p>
-              <h4 class="font-bold text-black">Mr A B Tajul Islam</h4>
-              <p>218 Madaripur 1</p>
+              <p class="mb-4 text-xl font-deca font-normal text-black opacity-60">Warm regards</p>
+              <h4 class="text-xl font-deca font-bold text-black">Mr. A B Tajul Islam</h4>
+              <p class="text-xl font-deca font-normal text-black opacity-60">218 Brahmanbaria 6</p>
             </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
     </div>
-
+  <!-- slider starts -->
   <div class="w-full pt-20">
-    <div class="flex content-title text-pmc-100 deca-family text-xl font-bold items-center justify-center mb-10">RECENT EVENTS</div>
+    <div class="flex text-pmc-100 font-deca text-base tracking-widest font-bold items-center justify-center mb-10">RECENT EVENTS</div>
     
     <div id="default-carousel" class="relative" data-carousel="static">
      <!-- Carousel wrapper -->
      <div class="relative overflow-hidden rounded-lg my-slider-height ">
           <!-- Item 1 -->
          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          
-            <div class="mid-home-column center">
+            <div class="container mx-auto">
             <div class="grid sm:grid-cols-3 gap-x-6 mb-6">
               <div class="group">
                 <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
@@ -174,9 +173,9 @@
                     </div>
                   </div>
                   <div class="p-6">
-                  <div class="flex pb-4 text-black text-2xl font-bold deca-family">Renovation of the MP Club Building Interior</div>
-                  <div class="flex deca-family opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
-                  <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+                  <div class="flex pb-4 text-black text-2xl font-bold font-deca">Renovation of the MP Club Building Interior</div>
+                  <div class="flex font-deca text-base text-black opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  <span class="flex pt-10"><a href="#" class="font-deca text-base font-bold">Read More ></a></span>
                 </div>
               </div>
             </div>
@@ -216,13 +215,10 @@
             </div>
             </div>
           </div>
-          
-            
-
          </div>
          <!-- Item 2 -->
          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="mid-home-column center">
+          <div class="container mx-auto">
             <div class="grid sm:grid-cols-3 gap-x-6 mb-6">
               <div class="group">
                 <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
@@ -280,7 +276,7 @@
          </div>
          <!-- Item 3 -->
          <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <div class="mid-home-column center">
+          <div class="container mx-auto">
             <div class="grid sm:grid-cols-3 gap-x-6 mb-6">
               <div class="group">
                 <div class="flex flex-col shadow-lg group-hover:border-2 group-hover:border-pmc-100 border-2">
@@ -359,9 +355,10 @@
  </div>
 </div>
 </div>
+<!-- gallery starts -->
   <div class="w-full">
-    <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
-      <div class="flex content-title text-pmc-100 deca-family font-bold mb-10">GALLERY</div>
+    <div class="container mx-auto p-9 md:py-20">
+      <div class="flex text-pmc-100 font-deca font-bold text-base mb-10 tracking-widest">GALLERY</div>
       <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
         <div class="flex">
           <img class="object-cover w-full" alt="banner img" src="/public/images/people/galary1.png" />
@@ -383,97 +380,100 @@
         </div>
       </div>
     </div>
-     
+    
+    <!-- facility starts -->
   <div class="w-full bg-black">
-    <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
-      <div class="flex content-title text-pmc-100 deca-family font-bold text-xl mb-10">FACILITIES</div>
+    <div class="container mx-auto p-9 md:py-20">
+      <div class="flex text-pmc-100 font-deca font-bold text-base mb-10 tracking-widest">FACILITIES</div>
       <div class="flex flex-col mb-10">
-        <span class="text-white display-family text-6xl">Facilities you can avail as a member</span>
-        <div class="styled-bolder flex my-6">
+        <span class="text-white font-deca text-7xl font-normal">Facilities you can avail as a member</span>
+        <div class="h-1 w-20 flex my-6">
           <span class="bg-red-600 flex w-8"></span>
           <span class="bg-green-600 flex w-8"></span>
         </div>
-        <p class="text-white deca-family">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <p class="text-white font-deca text-xl font-normal opacity-60">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
       </div>
-      <div class="grid md:grid-cols-5 md:grid-rows-1">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 md:grid-rows-1">
         <div class="group">
         <div class="flex p-6 sm:px-6 space-x-4 facility-border group-hover:bg-pmc-100/25">
           <img alt="facility img" src="/public/images/people/facility1.svg" />
-          <span class="text-white deca-family font-bold text-xl pt-2 group-hover:underline">Fishing</span>
+          <span class="text-white font-deca font-bold text-xl pt-2 group-hover:underline">Fishing</span>
         </div>
         </div>
          <div class="group">
-        <div class="flex p-6 sm:px-6 space-x-4 facility-border group-hover:bg-pmc-100/25">
+        <div class="flex p-6 sm:px-6 space-x-4 border-l border-pmc-100 group-hover:bg-pmc-100/25">
           <img alt="facility img" src="/public/images/people/facility2.svg" />
-          <span class="text-white deca-family font-bold text-xl pt-2 group-hover:underline">Gymnasiam</span>
+          <span class="text-white font-deca font-bold text-xl pt-2 group-hover:underline">Gymnasiam</span>
         </div>
         </div>
         <div class="group">
         <div class="flex p-6 sm:px-6 space-x-4 facility-border group-hover:bg-pmc-100/25">
           <img alt="facility img" src="/public/images/people/facility3.svg" />
-          <span class="text-white deca-family font-bold text-xl pt-2 group-hover:underline">Library</span>
+          <span class="text-white font-deca font-bold text-xl pt-2 group-hover:underline">Library</span>
         </div>
         </div>
         <div class="group">
         <div class="flex p-6 sm:px-6 space-x-4 facility-border group-hover:bg-pmc-100/25">
           <img alt="facility img" src="/public/images/people/facility4.svg" />
-          <span class="text-white deca-family font-bold text-xl pt-2 group-hover:underline">Outdoor games</span>
+          <span class="text-white font-deca font-bold text-xl pt-2 group-hover:underline">Outdoor games</span>
         </div>
         </div>
         <div class="group">
         <div class="flex p-6 sm:px-6 space-x-4 facility-border group-hover:bg-pmc-100/25">
           <img alt="facility img" src="/public/images/people/facility5.svg" />
-          <span class="text-white deca-family font-bold text-xl pt-2 group-hover:underline">Indoor games</span>
+          <span class="text-white font-deca font-bold text-xl pt-2 group-hover:underline">Indoor games</span>
         </div>
         </div>
       </div>
     </div>
   </div>
-   <div class="w-full bg-white-color">
-    <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
-      <div class="flex content-title text-pmc-100 deca-family font-bold mb-10">EXTENDED FACILITIES</div>
+   <!-- rent starts -->
+   <div class="w-full ">
+    <div class="container mx-auto p-9 md:py-20">
+      <div class="flex text-pmc-100 font-deca font-bold text-base mb-10 tracking-widest">FOR RENT</div>
       <div class="grid md:grid-cols-2">
         <div class="flex flex-col">
-            <span class="text-bold font-display-family text-4xl lg:text-6xl">A cenventional and</span>
-            <span class="text-bold font-display-family text-4xl lg:text-6x text-pmc-100">Premium</span>
-            <span class="text-bold font-display-family text-4xl lg:text-6x text-pmc-100">Destination</span>
-            <div class="styled-bolder flex my-6">
+            <span class="text-bold font-display text-4xl lg:text-7xl">Rent a convenient</span>
+            <span class="text-bold font-display text-4xl lg:text-7xl ">and <span class="text-pmc-100">Premium</span></span>
+            <span class="text-bold font-display text-4xl lg:text-7xl"><span class="text-pmc-100">Destination</span> for your</span>
+            <span class="text-bold font-display text-4xl lg:text-7xl">Programme</span>
+            <div class="h-1 w-20 flex my-6">
               <span class="bg-red-600 flex w-8"></span>
               <span class="bg-green-600 flex w-8"></span>
             </div>
-            <p class="text-sm md:text-base">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <p class="text-sm md:text-xl font-deca text-black opacity-70 font-light">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 
             <div class="flex flex-col">
               <div class="flex pt-10 group">
                 <img alt="facility img" class="flex group-hover:hidden" src="/public/images/facility/cil_house.svg" />
                 <img alt="facility img" class="hidden group-hover:flex" src="/public/images/facility/cil_house-1.svg" />
                 <span class="flex flex-col pl-6">
-                  <h3 class="pb-4 font-bold font-myfont text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
-                  <p class="text-sm md:text-base">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h3 class="pb-4 font-bold font-deca text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
+                  <p class="text-sm md:text-xl font-deca font-normal text-black opacity-70">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </span>
               </div>
               <div class="flex pt-10 group">
                 <img alt="facility img" class="flex group-hover:hidden" src="/public/images/facility/GROUP-20.svg" />
                 <img alt="facility img" class="hidden group-hover:flex" src="/public/images/facility/GROUP-21.svg" />
                 <span class="flex flex-col pl-6">
-                  <h3 class="pb-4 font-bold font-myfont text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
-                  <p class="text-sm md:text-base">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h3 class="pb-4 font-bold font-deca text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
+                  <p class="text-sm md:text-xl font-deca font-normal text-black opacity-70">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </span>
               </div>
                <div class="flex pt-10 group">
                 <img alt="facility img" class="flex group-hover:hidden" src="/public/images/facility/Group-17.svg" />
                 <img alt="facility img" class="hidden group-hover:flex" src="/public/images/facility/Group-18.svg" />
                 <span class="flex flex-col pl-6">
-                  <h3 class="pb-4 font-bold font-myfont text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
-                  <p class="text-sm md:text-base">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h3 class="pb-4 font-bold font-deca text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
+                  <p class="text-sm md:text-xl font-deca font-normal text-black opacity-70">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </span>
               </div>
                <div class="flex pt-10 group">
                 <img alt="facility img" class="flex group-hover:hidden" src="/public/images/facility/Hall.svg" />
                 <img alt="facility img" class="hidden group-hover:flex" src="/public/images/facility/Group-19.svg" />
                 <span class="flex flex-col pl-6">
-                  <h3 class="pb-4 font-bold font-myfont text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
-                  <p class="text-sm md:text-base">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <h3 class="pb-4 font-bold font-deca text-xl group-hover:text-pmc-100 group-hover:underline">LD hall including VVIP banquet hall</h3>
+                  <p class="text-sm md:text-xl font-deca font-normal text-black opacity-70">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
                 </span>
               </div>
             </div>
@@ -484,6 +484,7 @@
       </div>
     </div>
   </div>
+   <!-- booking starts -->
   <div class="w-full">
     <div class="flex flex-col md:flex-row">
       <div class="flex w-full md:w-2/4">
@@ -513,60 +514,69 @@
       </div>
     </div>
   </div>
-  <div class="w-full bg-white-color">
-     <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
-        <div class="grid md:grid-cols-2">
-          <div class="flex">
-            <img alt="facility img" src="/public/images/people/history.png" />
+   <!-- history starts -->
+  <div class="w-full">
+     <div class="container mx-auto p-9 md:py-20">
+        <div class="flex w-full space-x-16">
+          <div class="flex w-1/2">
+            <img alt="facility img" class="object-cover w-full" src="/public/images/people/history.jpg" />
           </div>
-           <div class="flex flex-col md:left-padding-75">
-             <div class="flex content-title text-pmc-100 deca-family font-bold mb-10 mt-9 md:mt-0">history</div>
+          <div class="flex w-1/2">
+           <div class="flex flex-col">
+             <div class="flex text-pmc-100 font-deca text-base tracking-widest font-bold mb-10">HISTORY</div>
              <div class="flex flex-col">
-             <div class="display-family header-size">A taste of heritage and the excellence of architecture</div>
-              <div class="styled-bolder flex my-6">
+             <div class="font-display text-7xl font-normal">A taste of heritage and the excellence of architecture</div>
+              <div class="h-1 flex my-6">
                 <span class="bg-red-600 flex w-8"></span>
                 <span class="bg-green-600 flex w-8"></span>
               </div>
-              <p>Parliament of Bangladesh is a unicameral legislature consisting of 350 members of which 300 Members from 300 territorial constituencies that is one from each constituency, on the basis of adult Franchise. </p>
-              <span class="flex pt-10"><a href="#" class="readmore">Read More ></a></span>
+              <p class="font-deca text-base font-normal text-black opacity-70">Parliament of Bangladesh is a unicameral legislature consisting of 350 members of which 300 Members from 300 territorial constituencies that is one from each constituency, on the basis of adult Franchise. </p>
+              <span class="flex pt-10"><a href="#" class="font-deca text-sm font-bold text-pmc-100">Read More ></a></span>
               </div>
             </div>
+          </div>
           </div>
         </div>
      </div>
   </div>
   <div class="w-full bg-black">
-     <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
+     <div class="container mx-auto p-9 md:py-20">
         <div class="grid grid-cols-4">
           <div class="flex">
             <img alt="facility img" src="/public/images/logo.svg" />
           </div>
           <div class="flex">
               <div class="flex space-x-4">
-                <div class="flex">
-                  <img alt="facility img" src="/public/images/fb.svg" />
-                </div>
-                <div class="flex">
-                  <img alt="facility img" src="/public/images/instagram.svg" />
-                </div>
+                 <div class="relative">
+                  <a href=""><img class="opacity-100 hover:opacity-0" alt="facility img" src="/public/images/fb.svg" /></a>
+                  <div class="top-0 h-10 w-12 absolute">
+                    <a href=""><img class="opacity-0 hover:opacity-100" alt="facility img" src="/public/images/fb-hover.svg" /></a>
+                  </div> 
+                 </div>  
+                 <div class="relative">
+                  <a href=""><img class="opacity-100 hover:opacity-0" alt="facility img" src="/public/images/instagram.svg" /></a>
+                  <div class="top-0 h-10 w-12 absolute">
+                    <a href=""><img class="opacity-0 hover:opacity-100" alt="facility img" src="/public/images/instagram-hover.svg" /></a>
+                  </div> 
+                 </div>  
             </div>
           </div>
           <div class="flex flex-col">
             <div class="flex space-x-4">
               <img alt="facility img" src="/public/images/phone.svg" />
-              <p class="text-white text-sm deca-facility tracking-widest">+8801876564738<p>
+              <p class="text-white text-sm font-deca tracking-wide">+8801876564738<p>
             </div>
             <div class="flex space-x-4 py-3">
               <img alt="facility img" src="/public/images/map-marker-alt.svg" />
-              <p class="text-white text-sm deca-facility tracking-widest">Sher e bangla nagar, Dhaka 1207</p>
+              <p class="text-white text-sm font-deca tracking-wide">Sher e bangla nagar, Dhaka 1207</p>
             </div>
             <div class="flex space-x-4">
               <img alt="facility img" src="/public/images/envelope.svg" />
-              <p class="text-white text-sm deca-facility tracking-widest">Email: mpclub@gmail.com</p>
+              <p class="text-white text-sm font-deca tracking-wide">Email: mpclub@gmail.com</p>
             </div>
           </div>
           <div class="flex flex-col items-end space-y-3">
-              <p class="text-white text-sm deca-facility tracking-widest">Designed & Developed by</p>
+              <p class="text-white text-sm font-deca tracking-wide">Designed & Developed by</p>
               <img alt="facility img" src="/public/images/dsi-logo.svg" />
           </div>
         </div>
