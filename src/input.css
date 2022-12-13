@@ -13,36 +13,37 @@
     border-color: #288c56;
     border-width: 1px;
   }
-  .bg-white {
-    background-color: #af9c3f !important;
-  }
-  .bg-white-color {
-    background-color: #f9f9f9;
-  }
-  .background-yellow {
-    background-color: #af9c3f !important;
-    border: none !important;
-  }
-  .background-black {
-    background-color: #000 !important;
-    border: none !important;
-  }
-  .font64 {
-    font-size: 64px;
-    line-height: 64px;
-  }
+
   .committee-people {
     width: 120px;
     height: 120px;
   }
-  .committee-people-common {
-    width: 80px;
-    height: 80px;
-  }
+
   .content-border-color {
     color: #c4c4c4;
   }
   .pagination-bg-color {
     background-color: white !important;
+  }
+
+  @screen md {
+    .left-gap {
+      padding-left: 30px;
+    }
+  }
+  @screen lg {
+    .left-gap {
+      padding-left: 60px;
+    }
+  }
+  @screen xl {
+    .left-gap {
+      padding-left: 70px;
+    }
+  }
+  @screen 2xl {
+    .left-gap {
+      padding-left: 220px;
+    }
   }
 }
