@@ -1222,16 +1222,16 @@ input:checked + .toggle-bg {
   width: 1.25rem;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-12 {
   width: 3rem;
 }
 
 .w-64 {
   width: 16rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-4 {
@@ -1407,12 +1407,6 @@ input:checked + .toggle-bg {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-16 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(4rem * var(--tw-space-x-reverse));
-  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .-space-x-px > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(-1px * var(--tw-space-x-reverse));
@@ -1509,6 +1503,16 @@ input:checked + .toggle-bg {
 .border-blue-600 {
   --tw-border-opacity: 1;
   border-color: rgb(28 100 242 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 82 82 / var(--tw-border-opacity));
 }
 
 .bg-pmc-100 {
@@ -1647,6 +1651,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0.5rem;
 }
 
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1660,16 +1669,6 @@ input:checked + .toggle-bg {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-}
-
-.py-9 {
-  padding-top: 2.25rem;
-  padding-bottom: 2.25rem;
-}
-
-.px-9 {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
 }
 
 .pt-12 {
@@ -1702,10 +1701,6 @@ input:checked + .toggle-bg {
 
 .pl-6 {
   padding-left: 1.5rem;
-}
-
-.pt-0 {
-  padding-top: 0px;
 }
 
 .pt-9 {
@@ -1925,16 +1920,6 @@ input:checked + .toggle-bg {
 
 .my-slider-height {
   height: 700px;
-}
-
-.indicator-border {
-  border-color: #288c56;
-  border-width: 1px;
-}
-
-.committee-people {
-  width: 120px;
-  height: 120px;
 }
 
 @media (min-width: 768px) {
@@ -2321,14 +2306,6 @@ input:checked + .toggle-bg {
     padding: 2.25rem;
   }
 
-  .md\:p-20 {
-    padding: 5rem;
-  }
-
-  .md\:p-0 {
-    padding: 0px;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -2362,10 +2339,6 @@ input:checked + .toggle-bg {
 
   .md\:pt-0 {
     padding-top: 0px;
-  }
-
-  .md\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .md\:text-7xl {

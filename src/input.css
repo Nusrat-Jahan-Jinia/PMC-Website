@@ -5,27 +5,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 @layer utilities {
-
   .my-slider-height {
     height: 700px;
   }
-  .indicator-border {
-    border-color: #288c56;
-    border-width: 1px;
-  }
-
-  .committee-people {
-    width: 120px;
-    height: 120px;
-  }
-
-  .content-border-color {
-    color: #c4c4c4;
-  }
-  .pagination-bg-color {
-    background-color: white !important;
-  }
-
   @screen md {
     .left-gap {
       padding-left: 30px;

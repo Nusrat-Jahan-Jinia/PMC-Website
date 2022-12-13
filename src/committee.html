@@ -13,25 +13,54 @@
   </head>
   <body class="font-deca">
     <div class="w-full">
-      <div class="hidden mid-home-column md:flex center justify-between py-4">
+      <div class="hidden container md:flex mx-auto justify-between py-4">
         <div class="flex">
           <img alt="logo" src="/public/images/logo.svg" />
         </div>
         <div class="flex items-center">
-          <ul class="flex">
-            <li class="active"><a href="#" class="active">Home</a></li>
-            <li class=""><a href="#">History</a></li>
-            <li class=""><a href="#">Committee</a></li>
-            <li class=""><a href="#">Members</a></li>
-            <li class=""><a href="#">Facilities</a></li>
-            <li class=""><a href="#">Bookings</a></li>
-            <li class="bg-pmc-100"><a href="#" class="text-white">Login</a></li>
+          <ul class="flex md:space-x-3 lg:space-x-6">
+            <li class="py-3">
+              <a
+                href="/src/index.html"
+                class="active text-base font-normal font-deca text-pmc-100"
+                >Home</a
+              >
+            </li>
+            <li class="py-3">
+              <a href="#" class="text-base font-normal font-deca">History</a>
+            </li>
+            <li class="py-3">
+              <a
+                href="/src/committee.html"
+                class="text-base font-normal font-deca"
+                >Committee</a
+              >
+            </li>
+            <li class="py-3">
+              <a
+                href="/src/members.html"
+                class="text-base font-normal font-deca"
+                >Members</a
+              >
+            </li>
+            <li class="py-3">
+              <a href="#" class="text-base font-normal font-deca">Facilities</a>
+            </li>
+            <li class="py-3">
+              <a href="#" class="text-base font-normal font-deca">Bookings</a>
+            </li>
+            <li class="bg-pmc-100 py-3 px-6">
+              <a href="#" class="text-white text-base font-normal font-deca"
+                >Login</a
+              >
+            </li>
           </ul>
         </div>
       </div>
     </div>
+    <!-- people starts -->
     <div class="w-full">
-      <div class="mid-home-column flex flex-col center gaptb-75 px-7 md:px-0">
+      <div class="container mx-auto flex flex-col gaptb-75 px-7 md:px-0">
         <div class="flex content-title text-pmc-100 text-xl font-bold mb-10">
           EXECUTIVE COMMITTEE
         </div>
@@ -461,27 +490,53 @@
         </div>
       </div>
     </div>
-    <!-- footer start -->
-    <div class="hidden md:flex w-full bg-black">
-      <div class="mid-home-column center gaptb-80 gaplr-36 md:pl-0 md:pr-0">
+    <!-- footer starts -->
+    <div class="w-full bg-black hidden md:flex">
+      <div class="container mx-auto p-9 md:py-20">
         <div class="grid grid-cols-4">
           <div class="flex">
             <img alt="facility img" src="/public/images/logo.svg" />
           </div>
           <div class="flex">
             <div class="flex space-x-4">
-              <div class="flex">
-                <img alt="facility img" src="/public/images/fb.svg" />
+              <div class="relative">
+                <a href=""
+                  ><img
+                    class="opacity-100 hover:opacity-0"
+                    alt="facility img"
+                    src="/public/images/fb.svg"
+                /></a>
+                <div class="top-0 h-10 w-12 absolute">
+                  <a href=""
+                    ><img
+                      class="opacity-0 hover:opacity-100"
+                      alt="facility img"
+                      src="/public/images/fb-hover.svg"
+                  /></a>
+                </div>
               </div>
-              <div class="flex">
-                <img alt="facility img" src="/public/images/instagram.svg" />
+              <div class="relative">
+                <a href=""
+                  ><img
+                    class="opacity-100 hover:opacity-0"
+                    alt="facility img"
+                    src="/public/images/instagram.svg"
+                /></a>
+                <div class="top-0 h-10 w-12 absolute">
+                  <a href=""
+                    ><img
+                      class="opacity-0 hover:opacity-100"
+                      alt="facility img"
+                      src="/public/images/instagram-hover.svg"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="flex flex-col">
             <div class="flex space-x-4">
               <img alt="facility img" src="/public/images/phone.svg" />
-              <p class="text-white text-sm deca-facility tracking-widest">
+              <p class="text-white text-sm font-deca tracking-wide">
                 +8801876564738
               </p>
               <p></p>
@@ -489,19 +544,19 @@
 
             <div class="flex space-x-4 py-3">
               <img alt="facility img" src="/public/images/map-marker-alt.svg" />
-              <p class="text-white text-sm deca-facility tracking-widest">
+              <p class="text-white text-sm font-deca tracking-wide">
                 Sher e bangla nagar, Dhaka 1207
               </p>
             </div>
             <div class="flex space-x-4">
               <img alt="facility img" src="/public/images/envelope.svg" />
-              <p class="text-white text-sm deca-facility tracking-widest">
+              <p class="text-white text-sm font-deca tracking-wide">
                 Email: mpclub@gmail.com
               </p>
             </div>
           </div>
           <div class="flex flex-col items-end space-y-3">
-            <p class="text-white text-sm deca-facility tracking-widest">
+            <p class="text-white text-sm font-deca tracking-wide">
               Designed & Developed by
             </p>
             <img alt="facility img" src="/public/images/dsi-logo.svg" />
