@@ -1092,6 +1092,10 @@ input:checked + .toggle-bg {
   order: 9999;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1379,6 +1383,10 @@ input:checked + .toggle-bg {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-start {
@@ -2406,6 +2414,14 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 768px) {
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:order-first {
+    order: -9999;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2458,6 +2474,10 @@ input:checked + .toggle-bg {
     flex-direction: row;
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -2484,6 +2504,10 @@ input:checked + .toggle-bg {
 
   .md\:p-9 {
     padding: 2.25rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:py-20 {
