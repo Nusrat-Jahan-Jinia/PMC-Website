@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 @layer utilities {
-  .menu-link{
+  .menu-link {
     @apply text-xl font-normal font-deca;
   }
   .home-header {
@@ -31,25 +31,5 @@
   }
   .my-slider-height {
     height: 700px;
-  }
-  @screen md {
-    .left-gap {
-      padding-left: 30px;
-    }
-  }
-  @screen lg {
-    .left-gap {
-      padding-left: 60px;
-    }
-  }
-  @screen xl {
-    .left-gap {
-      padding-left: 70px;
-    }
-  }
-  @screen 2xl {
-    .left-gap {
-      padding-left: 220px;
-    }
   }
 }
