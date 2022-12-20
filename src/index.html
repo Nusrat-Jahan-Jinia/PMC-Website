@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <link href="/dist/output.css" rel="stylesheet" />
@@ -50,16 +47,6 @@
           <p class="white-para text-base md:text-xl">
             Parliament Members Club provides a beautiful, elegant indoor and outdoor
             venue for your programme at a convenient cost.
-          </p>
-          <div class="flex pt-12">
-            <button
-              class="bg-pmc-100 text-white font-bold font-deca text-base px-5 py-2"
-            >
-              Book Now
-            </button>
-          </div>
-          <p class="text-pmc-100 font-deca text-base font-normal py-4">
-            Have a booking ID?
           </p>
         </div>
       </div>
@@ -347,11 +334,11 @@
          </div>
      </div>
      <!-- Slider indicators -->
-     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2 indicator-button">
-         <button type="button" class="w-3 h-3 rounded-full border border-red-500" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-         <button type="button" class="w-3 h-3 rounded-full border border-red-500" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-         <button type="button" class="w-3 h-3 rounded-full border border-red-500" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-     </div>
+     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full border border-green-500" aria-current="false" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full border border-green-500" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full border border-green-500" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+  </div>
      <!-- Slider controls -->
      <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
          <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -440,10 +427,10 @@
       </div>
     </div>
   </div>
-   <!-- rent starts -->
+   <!-- EXTENDED FACILITIES starts -->
    <div class="w-full ">
     <div class="container mx-auto px-9 py-9 md:px-0 md:py-20">
-      <div class="yellow-header">FOR RENT</div>
+      <div class="yellow-header">EXTENDED FACILITIES</div>
       <div class="grid md:grid-cols-2">
         <div class="flex flex-col">
             <span class="home-header text-5xl md:text-7xl">Rent a convenient</span>
@@ -491,7 +478,7 @@
               </div>
             </div>
         </div>
-        <div class="hidden md:flex">
+        <div class="hidden md:flex justify-end">
           <img alt="facility img" src="/public/images/people/mp-club-plan 1.png" />
         </div>
       </div>
@@ -515,11 +502,10 @@
               <span class="white-para text-base md:text-xl">Select your desired date and check the availability of the best venues</span>
             </div>
             <div class="flex flex-col">
-              <div class="w-full flex border border-gray-100 py-3">
-              <input class="flex border-0 w-full bg-black text-white text-base font-normal font-deca pl-6" type="text" id="datepicker" value="Select date">
-              </div>
-              <div class="w-full bg-pmc-100 flex border border-gray-100 py-3 mt-5">
-                <input class="border-0 flex w-full bg-pmc-100 font-bold text-white text-base font-deca pl-6" type="text" id="datepicker" value="Check availability">
+              <div class="w-full bg-pmc-100 flex border border-gray-100 py-3">
+                <a href="#">
+                <span class="border-0 flex w-full bg-pmc-100 font-bold text-white text-base font-deca pl-6">Book Now</span>
+              </a>
               </div>
               <p class="text-pmc-100 text-base font-bold font-deca mt-5">Have a booking ID?</p>
             </div>
