@@ -11,11 +11,11 @@
     />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="font-deca">
-    <div class="w-full bg-black">
+  <body class="font-deca relative">
+    <div class="w-full bg-black sticky top-0 left-0 right-0">
       <div class="hidden container md:flex mx-auto justify-between py-4">
         <div class="flex">
-          <img alt="logo" src="/public/images/logo.svg" />
+          <img alt="logo" src="/public/images/home/white-logo.svg" />
         </div>
         <div class="flex items-center">
           <ul class="flex md:space-x-3 lg:space-x-9">
@@ -216,17 +216,17 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-1">
-              <div class="flex">
+            <div class="flex flex-col">
+              <div class="flex w-full">
                 <img
                   alt="facility img"
                   class="object-cover w-full"
-                  src="/public/images/facility/library.jpeg"
+                  src="/public/images/facility/library.jpg"
                 />
               </div>
 
-              <div class="flex">
-                <span class="black-para text-sm md:text-base pt-9"
+              <div class="flex pt-9">
+                <span class="black-para text-sm md:text-base"
                   >The standard chunk of Lorem Ipsum used since the 1500s is
                   reproduced below for those interested. Sections 1.10.32 and
                   1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
@@ -281,7 +281,9 @@
                 </div>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="flex bg-black flex-col p-6 md:p-12 order-last md:order-first">
+                <div
+                  class="flex bg-black flex-col p-6 md:p-12 order-last md:order-first"
+                >
                   <div class="yellow-header text-xl md:text-2xl">
                     Basketball
                   </div>
