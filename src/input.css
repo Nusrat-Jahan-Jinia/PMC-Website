@@ -19,10 +19,10 @@
     @apply flex text-pmc-100 font-deca text-xl tracking-widest font-bold mb-10;
   }
   .black-para {
-    @apply flex font-deca font-normal text-black opacity-70;
+    @apply flex font-deca font-normal text-black opacity-70 text-xl;
   }
   .white-para {
-    @apply flex font-deca font-normal text-white opacity-70;
+    @apply flex font-deca font-normal text-white opacity-70 text-xl;
   }
   .facility-header {
     @apply flex font-deca text-4xl font-bold;
