@@ -1222,6 +1222,10 @@ input:checked + .toggle-bg {
   height: 1rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -2091,6 +2095,14 @@ input:checked + .toggle-bg {
 }
 
 /* slider end */
+
+.hover\:flex:hover {
+  display: flex;
+}
+
+.hover\:hidden:hover {
+  display: none;
+}
 
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
