@@ -1106,6 +1106,11 @@ input:checked + .toggle-bg {
   margin-bottom: 1.5rem;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -1464,6 +1469,12 @@ input:checked + .toggle-bg {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1617,6 +1628,11 @@ input:checked + .toggle-bg {
 .bg-gray-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 82 82 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -2486,6 +2502,10 @@ input:checked + .toggle-bg {
     padding: 3rem;
   }
 
+  .md\:p-20 {
+    padding: 5rem;
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -2526,6 +2546,10 @@ input:checked + .toggle-bg {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pr-9 {
+    padding-right: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -2608,6 +2632,10 @@ input:checked + .toggle-bg {
     padding-left: 5rem;
   }
 
+  .lg\:pr-20 {
+    padding-right: 5rem;
+  }
+
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
@@ -2622,5 +2650,17 @@ input:checked + .toggle-bg {
 @media (min-width: 1280px) {
   .xl\:pl-48 {
     padding-left: 12rem;
+  }
+
+  .xl\:pr-48 {
+    padding-right: 12rem;
+  }
+
+  .xl\:pr-4 {
+    padding-right: 1rem;
+  }
+
+  .xl\:pr-40 {
+    padding-right: 10rem;
   }
 }
