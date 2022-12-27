@@ -12,7 +12,7 @@
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="font-deca relative">
-    <div class="w-full bg-black sticky top-0 left-0 right-0">
+    <div class="w-full sticky top-0 left-0 right-0 bg-black z-10">
       <div class="hidden container md:flex mx-auto justify-between py-4">
         <div class="flex">
           <img alt="logo" src="/public/images/home/white-logo.svg" />
@@ -20,51 +20,35 @@
         <div class="flex items-center">
           <ul class="flex md:space-x-3 lg:space-x-9">
             <li class="py-3">
-              <a
-                href="/src/index.html"
-                class="active text-xl font-normal font-deca text-white"
-                >Home</a
-              >
+              <a href="/src/index.html" class="menu-link text-white">Home</a>
             </li>
             <li class="py-3">
-              <a
-                href="/src/history.html"
-                class="text-xl font-normal font-deca text-white"
+              <a href="/src/history.html" class="menu-link text-white"
                 >History</a
               >
             </li>
             <li class="py-3">
-              <a
-                href="/src/committee.html"
-                class="text-xl font-normal font-deca text-white"
+              <a href="/src/committee.html" class="menu-link text-white"
                 >Committee</a
               >
             </li>
             <li class="py-3">
-              <a
-                href="/src/members1.html"
-                class="text-xl font-normal font-deca text-white"
+              <a href="/src/members1.html" class="menu-link text-white"
                 >Members</a
               >
             </li>
             <li class="py-3">
-              <a
-                href="/src/facility.html"
-                class="text-xl font-normal font-deca text-pmc-100"
+              <a href="/src/facility.html" class="menu-link text-pmc-100"
                 >Facilities</a
               >
             </li>
             <li class="py-3">
-              <a
-                href="/src/booking.html"
-                class="text-xl font-normal font-deca text-white"
+              <a href="/src/booking.html" class="menu-link text-white"
                 >Bookings</a
               >
             </li>
             <li class="bg-pmc-100 py-3 px-6">
-              <a href="#" class="text-white text-xl font-normal font-deca"
-                >Login</a
-              >
+              <a href="#" class="text-white menu-link">Login</a>
             </li>
           </ul>
         </div>
@@ -74,173 +58,237 @@
     <div class="w-full">
       <div class="container mx-auto px-9 py-9 md:px-0 md:py-20">
         <div class="yellow-header">FACILITIES</div>
-        <div class="flex py-4 md:py-20 border-y border-gray-200">
-          <div class="flex flex-col space-y-4 md:space-y-9">
-            <div class="flex space-x-6">
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="flex w-32 h-32"
-                  src="/public/images/facility/fishing.svg"
-                />
-              </div>
-              <!-- fishing -->
-              <div class="flex flex-col">
-                <div class="facility-header text-base md:text-4xl">Fishing</div>
-                <div class="black-para text-sm md:text-base pt-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
+        <!-- fishing -->
+        <div id="library" class="py-4 md:py-20 border-gray-200 border-y">
+          <div class="flex">
+            <div class="flex flex-col space-y-4 md:space-y-9">
+              <div class="flex space-x-6">
+                <div class="flex w-32">
+                  <img
+                    alt="facility img"
+                    class="w-32 h-32"
+                    src="/public/images/facility/fishing.svg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="facility-header text-base md:text-4xl">
+                    Fishing
+                  </div>
+                  <div class="black-para text-sm md:text-base pt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="grid grid-cols-2">
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="object-cover w-full"
-                  src="/public/images/facility/fishing.jpeg"
-                />
+              <div class="flex flex-col">
+                <div class="flex w-full">
+                  <div class="flex w-full md:w-2/4">
+                    <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/fishing.jpeg"
+                  />
+                  </div>
+                  <div class="flex w-full md:w-2/4">
+                    <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/fishing2.jpeg"
+                  />
+                  </div>
+                </div>
+                <div class="flex pt-9">
+                  <span class="black-para text-sm md:text-base"
+                    >The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested. Sections 1.10.32 and
+                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                    also reproduced in their exact original form, accompanied by
+                    English versions from the 1914 translation by H.
+                    Rackham.</span
+                  >
+                </div>
               </div>
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="object-cover w-full"
-                  src="/public/images/facility/fishing2.jpeg"
-                />
-              </div>
-            </div>
-            <div class="flex">
-              <span class="black-para text-sm md:text-base pt-9"
-                >The standard chunkk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested. Sections 1.10.32 and
-                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                reproduced in their exact original form, accompanied by English
-                versions from the 1914 translation by H. Rackham.</span
-              >
             </div>
           </div>
         </div>
         <!-- Gymnasiam -->
-        <div class="flex py-4 md:py-20 border-y border-gray-200">
-          <div class="flex flex-col space-y-4 md:space-y-9">
-            <div class="flex space-x-6">
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="flex w-32 h-32"
-                  src="/public/images/facility/fishing.svg"
-                />
+        <div id="library" class="py-4 md:py-20 border-gray-200 border-y">
+          <div class="flex">
+            <div class="flex flex-col space-y-4 md:space-y-9">
+              <div class="flex space-x-6">
+                <div class="flex">
+                  <img
+                    alt="facility img"
+                    class="flex w-32 h-32"
+                    src="/public/images/facility/gymnasium.svg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="facility-header text-base md:text-4xl">
+                    Gymnasiam
+                  </div>
+                  <div class="black-para text-sm md:text-base pt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam,
+                  </div>
+                </div>
               </div>
               <div class="flex flex-col">
-                <div class="facility-header text-base md:text-4xl">
-                  Gymnasiam
+                <div class="flex w-full">
+                  <div class="flex w-full md:w-2/4">
+                    <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/gym-1.png"
+                  />
+                  </div>
+                  <div class="flex w-full md:w-2/4">
+                    <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/gym-2.png"
+                  />
+                  </div>
                 </div>
-                <div class="black-para text-sm md:text-base pt-2">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
+                <div class="flex pt-9">
+                  <span class="black-para text-sm md:text-base"
+                    >The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested. Sections 1.10.32 and
+                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                    also reproduced in their exact original form, accompanied by
+                    English versions from the 1914 translation by H.
+                    Rackham.</span
+                  >
                 </div>
               </div>
-            </div>
-            <div class="grid grid-cols-2">
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="object-cover w-full"
-                  src="/public/images/facility/gym-1.png"
-                />
+              <div class="flex flex-col">
+                <div class="flex w-full">
+                  <div class="flex w-full md:w-2/4">
+                    <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/gym-3.png"
+                  />
+                  </div>
+                  <div class="flex w-full md:w-2/4">
+                    <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/gym-4.png"
+                  />
+                  </div>
+                </div>
+                <div class="flex pt-9">
+                  <span class="black-para text-sm md:text-base"
+                    >The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested. Sections 1.10.32 and
+                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                    also reproduced in their exact original form, accompanied by
+                    English versions from the 1914 translation by H.
+                    Rackham.</span
+                  >
+                </div>
               </div>
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="object-cover w-full"
-                  src="/public/images/facility/gym-2.png"
-                />
-              </div>
-            </div>
-            <div class="flex">
-              <span class="black-para text-sm md:text-base pt-9"
-                >The standard chunk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested. Sections 1.10.32 and
-                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                reproduced in their exact original form, accompanied by English
-                versions from the 1914 translation by H. Rackham.</span
-              >
-            </div>
-            <div class="grid grid-cols-2">
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="object-cover w-full"
-                  src="/public/images/facility/gym-3.png"
-                />
-              </div>
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="object-cover w-full"
-                  src="/public/images/facility/gym-4.png"
-                />
-              </div>
-            </div>
-            <div class="flex">
-              <span class="black-para text-sm md:text-base pt-9"
-                >The standard chunk of Lorem Ipsum used since the 1500s is
-                reproduced below for those interested. Sections 1.10.32 and
-                1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
-                reproduced in their exact original form, accompanied by English
-                versions from the 1914 translation by H. Rackham.</span
-              >
             </div>
           </div>
         </div>
         <!-- library -->
-        <div class="flex py-4 md:py-20 border-y border-gray-200">
-          <div class="flex flex-col space-y-4 md:space-y-9">
-            <div class="flex space-x-6">
-              <div class="flex">
-                <img
-                  alt="facility img"
-                  class="flex w-32 h-32"
-                  src="/public/images/facility/library.svg"
-                />
-              </div>
-              <div class="flex flex-col">
-                <div class="facility-header text-base md:text-4xl">Library</div>
-                <div class="black-para text-sm md:text-base pt-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam,
+        <div id="library" class="py-4 md:py-20 border-gray-200 border-y">
+          <div class="flex">
+            <div class="flex flex-col space-y-4 md:space-y-9">
+              <div class="flex space-x-6">
+                <div class="flex">
+                  <img
+                    alt="facility img"
+                    class="flex w-32 h-32"
+                    src="/public/images/facility/library.svg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="facility-header text-base md:text-4xl">
+                    Library
+                  </div>
+                  <div class="black-para text-sm md:text-base pt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam,
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="flex flex-col">
-              <div class="flex w-full">
-                <img
-                  alt="facility img"
-                  class="object-cover w-full"
-                  src="/public/images/facility/library.jpg"
-                />
-              </div>
+              <div class="flex flex-col">
+                <div class="flex w-full">
+                  <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/library.jpg"
+                  />
+                </div>
 
-              <div class="flex pt-9">
-                <span class="black-para text-sm md:text-base"
-                  >The standard chunk of Lorem Ipsum used since the 1500s is
-                  reproduced below for those interested. Sections 1.10.32 and
-                  1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
-                  also reproduced in their exact original form, accompanied by
-                  English versions from the 1914 translation by H.
-                  Rackham.</span
-                >
+                <div class="flex pt-9">
+                  <span class="black-para text-sm md:text-base"
+                    >The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested. Sections 1.10.32 and
+                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                    also reproduced in their exact original form, accompanied by
+                    English versions from the 1914 translation by H.
+                    Rackham.</span
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
         <!-- library ends -->
+        <div id="library" class="py-4 md:py-20 border-gray-200 border-y">
+          <div class="flex">
+            <div class="flex flex-col space-y-4 md:space-y-9">
+              <div class="flex space-x-6">
+                <div class="flex">
+                  <img
+                    alt="facility img"
+                    class="flex w-32 h-32"
+                    src="/public/images/facility/library.svg"
+                  />
+                </div>
+                <div class="flex flex-col">
+                  <div class="facility-header text-base md:text-4xl">
+                    Library
+                  </div>
+                  <div class="black-para text-sm md:text-base pt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam,
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex w-full">
+                  <img
+                    alt="facility img"
+                    class="object-cover w-full"
+                    src="/public/images/facility/library.jpg"
+                  />
+                </div>
+
+                <div class="flex pt-9">
+                  <span class="black-para text-sm md:text-base"
+                    >The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested. Sections 1.10.32 and
+                    1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                    also reproduced in their exact original form, accompanied by
+                    English versions from the 1914 translation by H.
+                    Rackham.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- outdoor games starts -->
-        <div class="flex py-4 md:py-20 border-y border-gray-200">
+        <div id="outdoor" class="py-4 md:py-20 border-gray-200 border-y">
+        <div class="flex">
           <div class="flex flex-col space-y-4 md:space-y-9">
             <div class="flex space-x-6">
               <div class="flex">
@@ -323,9 +371,11 @@
             </div>
           </div>
         </div>
+      </div>
         <!-- indoor games starts -->
 
-        <div class="flex py-4 md:py-20 border-y border-gray-200">
+        <div id="indoor" class="py-4 md:py-20 border-gray-200 border-y">
+        <div class="flex">
           <div class="flex flex-col space-y-4 md:space-y-9">
             <div class="flex space-x-6">
               <div class="flex">
@@ -390,6 +440,7 @@
             </div>
           </div>
         </div>
+      </div>
         <!-- outdoor games ends -->
       </div>
     </div>
