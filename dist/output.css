@@ -1096,6 +1096,10 @@ input:checked + .toggle-bg {
   order: 9999;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1104,11 +1108,6 @@ input:checked + .toggle-bg {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 .mb-6 {
@@ -1141,6 +1140,10 @@ input:checked + .toggle-bg {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .block {
@@ -1259,16 +1262,16 @@ input:checked + .toggle-bg {
   width: 50%;
 }
 
-.w-2\/6 {
-  width: 33.333333%;
-}
-
 .w-3 {
   width: 0.75rem;
 }
 
 .w-5 {
   width: 1.25rem;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
 }
 
 .w-64 {
@@ -1580,6 +1583,10 @@ input:checked + .toggle-bg {
   background-color: rgb(5 122 85 / var(--tw-bg-opacity));
 }
 
+.bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
+}
+
 .bg-red-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(248 180 180 / var(--tw-bg-opacity));
@@ -1588,10 +1595,6 @@ input:checked + .toggle-bg {
 .bg-zinc-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
-}
-
-.bg-white\/30 {
-  background-color: rgb(255 255 255 / 0.3);
 }
 
 .bg-indigo-50 {
@@ -1671,10 +1674,6 @@ input:checked + .toggle-bg {
   padding: 0.5rem;
 }
 
-.p-10 {
-  padding: 2.5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1705,11 +1704,6 @@ input:checked + .toggle-bg {
   padding-bottom: 2.25rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1730,14 +1724,19 @@ input:checked + .toggle-bg {
   padding-bottom: 1.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .px-2 {
@@ -1750,17 +1749,20 @@ input:checked + .toggle-bg {
   padding-bottom: 0.625rem;
 }
 
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .pt-12 {
   padding-top: 3rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pb-9 {
+  padding-bottom: 2.25rem;
 }
 
 .pt-10 {
@@ -1775,16 +1777,16 @@ input:checked + .toggle-bg {
   padding-top: 2.25rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .pl-6 {
@@ -1797,14 +1799,6 @@ input:checked + .toggle-bg {
 
 .pb-12 {
   padding-bottom: 3rem;
-}
-
-.pt-4 {
-  padding-top: 1rem;
-}
-
-.pb-9 {
-  padding-bottom: 2.25rem;
 }
 
 .text-center {
@@ -2119,6 +2113,26 @@ input:checked + .toggle-bg {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-yellow-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 160 8 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-yellow-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 120 3 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-black:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-yellow-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 202 21 / var(--tw-bg-opacity));
+}
+
 .hover\:text-gray-900:hover {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
@@ -2349,16 +2363,16 @@ input:checked + .toggle-bg {
     height: 1.5rem;
   }
 
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
   .sm\:w-10 {
     width: 2.5rem;
   }
 
   .sm\:w-6 {
     width: 1.5rem;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
   }
 
   .sm\:grid-cols-2 {
@@ -2413,6 +2427,23 @@ input:checked + .toggle-bg {
     order: -9999;
   }
 
+  .md\:m-20 {
+    margin: 5rem;
+  }
+
+  .md\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2423,10 +2454,6 @@ input:checked + .toggle-bg {
 
   .md\:inline-flex {
     display: inline-flex;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:h-32 {
@@ -2530,14 +2557,8 @@ input:checked + .toggle-bg {
     padding-bottom: 5rem;
   }
 
-  .md\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .md\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+  .md\:pb-20 {
+    padding-bottom: 5rem;
   }
 
   .md\:pr-20 {
@@ -2546,6 +2567,10 @@ input:checked + .toggle-bg {
 
   .md\:pl-9 {
     padding-left: 2.25rem;
+  }
+
+  .md\:pt-20 {
+    padding-top: 5rem;
   }
 
   .md\:pl-20 {
@@ -2558,22 +2583,6 @@ input:checked + .toggle-bg {
 
   .md\:pt-0 {
     padding-top: 0px;
-  }
-
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
-  .md\:pb-20 {
-    padding-bottom: 5rem;
-  }
-
-  .md\:pb-0 {
-    padding-bottom: 0px;
-  }
-
-  .md\:pb-10 {
-    padding-bottom: 2.5rem;
   }
 
   .md\:text-4xl {
