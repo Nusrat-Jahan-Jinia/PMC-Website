@@ -10,7 +10,7 @@
     background-color: red;
   }
   .menu-link {
-    @apply text-base font-normal font-deca;
+    @apply text-xl font-normal font-deca;
   }
   .home-header {
     @apply font-display font-normal;
