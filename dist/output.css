@@ -1791,6 +1791,10 @@ input:checked + .toggle-bg {
   padding-bottom: 3rem;
 }
 
+.pl-9 {
+  padding-left: 2.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2550,6 +2554,10 @@ input:checked + .toggle-bg {
 
   .md\:pt-0 {
     padding-top: 0px;
+  }
+
+  .md\:pl-2 {
+    padding-left: 0.5rem;
   }
 
   .md\:text-4xl {
