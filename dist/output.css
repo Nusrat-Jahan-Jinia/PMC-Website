@@ -2441,6 +2441,10 @@ input:checked + .toggle-bg {
     height: 24rem;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-32 {
     width: 8rem;
   }
@@ -2583,6 +2587,10 @@ input:checked + .toggle-bg {
     margin-bottom: 0px;
   }
 
+  .lg\:flex {
+    display: flex;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2633,12 +2641,58 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .xl\:pl-48 {
     padding-left: 12rem;
   }
 
   .xl\:pr-40 {
     padding-right: 10rem;
+  }
+
+  .xl\:pr-36 {
+    padding-right: 9rem;
+  }
+
+  .xl\:pl-4 {
+    padding-left: 1rem;
+  }
+
+  .xl\:pl-3 {
+    padding-left: 0.75rem;
+  }
+
+  .xl\:pl-36 {
+    padding-left: 9rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:pl-48 {
+    padding-left: 12rem;
+  }
+
+  .\32xl\:pr-48 {
+    padding-right: 12rem;
+  }
+
+  .\32xl\:pr-44 {
+    padding-right: 11rem;
+  }
+
+  .\32xl\:pr-40 {
+    padding-right: 10rem;
+  }
+
+  .\32xl\:pr-4 {
+    padding-right: 1rem;
   }
 }
 
