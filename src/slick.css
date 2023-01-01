@@ -92,9 +92,7 @@
 }
 .slick-vertical .slick-slide {
   display: block;
-
   height: auto;
-
   border: 1px solid transparent;
 }
 .slick-arrow.slick-hidden {
@@ -103,19 +101,10 @@
 .slick-arrow {
   display: none !important;
 }
-.slick-dots{
-    background-color: red;
-
-}
 .slick-dots li {
   list-style: disc;
-  /* display: inline-block; */
-
-
-  
-
-
 }
+
 .slick-dots button {
   display: none;
 }

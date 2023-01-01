@@ -8,6 +8,11 @@
     type="text/css"
     href="/src/slick2.css"
   />
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="/src/slick-theme.css"
+/>
   <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="relative">
@@ -30,10 +35,10 @@
       </div>
     </div>
     <!-- banner starts -->
-    <div class="w-full flex flex-col md:flex-row md:h-screen">
+    <div class="w-full flex flex-col md:flex-row 2xl:h-screen">
       <div class="w-full md:w-2/5 flex bg-black items-center">
         <div class="flex flex-col p-9 md:pr-20 md:pl-9 lg:pl-20 xl:pl-36">
-          <div class="home-header text-white text-5xl md:text-6xl lg:text-7xl">
+          <div class="home-header text-white text-5xl lg:text-7xl">
             Welcome to
             <span class="text-yellow-500 font-bold">Parliament Members Club</span>
           </div>
@@ -41,7 +46,7 @@
             <span class="bg-red-600 flex w-8"></span>
             <span class="bg-green-600 flex w-8"></span>
           </div>
-          <p class="white-para text-base md:text-xl">
+          <p class="white-para text-base lg:text-xl">
             Parliament Members Club provides a beautiful, elegant indoor and outdoor
             venue for your programme at a convenient cost.
           </p>
@@ -532,15 +537,17 @@
  <!-- mobile footer starts -->
  <div class="w-full bg-black flex lg:hidden mt-5">
   <div class="container mx-auto p-9 md:px-0 md:py-20">
-    <div class="flex">
+    <div class="flex space-x-3">
       <div class="flex w-2/4">
-        <img alt="facility img" src="/public/images/white-logo.svg" class="w-32" />
+        <img alt="facility img" src="/public/images/white-logo.svg" class="w-32 sm:w-full" />
       </div>
+      <a href="https://www.dsinnovators.com/">
       <div class="flex justify-end w-2/4">
         <div class="flex flex-col space-y-3">
-        <p class="text-white opacity-70 text-base font-deca tracking-wide">Designed & Developed by</p>
-        <img alt="facility img" src="/public/images/mobile-footer-dsi-logo.svg"  />
+        <p class="text-white opacity-70 text-sm sm:text-base font-deca tracking-wide">Designed & Developed by</p>
+        <img alt="facility img" src="/public/images/mobile-footer-dsi-logo.svg" class="w-32 sm:w-full items-end" />
       </div>
+    </a>
     </div>
     </div>
     <div class="flex pt-20">

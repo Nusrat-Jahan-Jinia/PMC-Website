@@ -101,32 +101,6 @@
 
 /* slick custom */
 
-
-.slick-slide {
-  margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-.slick-slide {
-  transition: all ease-in-out 0.3s;
-  opacity: 0.2;
-}
-
-.slick-active {
-  opacity: 0.5;
-}
-
-.slick-current {
-  opacity: 1;
-}
 .slick-dots{
     padding-top: 40px;
     display: flex !important;
@@ -136,12 +110,4 @@
     list-style: disc !important;
     
 }
-.slick-dots li {
-  display: flex;
-  flex-direction: row;
-  height: 20px;
-  width: 20px;
-  align-items: center;
-  list-style: disc !important;
 
-}
