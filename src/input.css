@@ -16,7 +16,7 @@
     @apply font-display font-normal;
   }
   .yellow-header {
-    @apply flex text-pmc-100 font-deca text-xl tracking-widest font-bold mb-10;
+    @apply flex text-yellow-500 font-deca text-xl tracking-widest font-bold mb-10;
   }
   .black-para {
     @apply flex font-deca font-normal text-black opacity-70;
@@ -31,7 +31,7 @@
     @apply flex pb-4 text-black text-2xl font-bold font-deca;
   }
   .readmore {
-    @apply font-deca text-base font-bold text-pmc-100;
+    @apply font-deca text-base font-bold text-yellow-500;
   }
   .my-slider-height {
     height: 700px;

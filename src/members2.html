@@ -5,61 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
     <link href="/dist/output.css" rel="stylesheet" />
   </head>
-  <body class="font-deca">
-    <div class="w-full bg-black">
-      <div class="hidden container md:flex mx-auto justify-between py-4">
+  <body class="font-deca relative">
+    <div class="w-full sticky top-0 left-0 right-0 bg-black z-10">
+      <div class="hidden container md:flex mx-auto justify-between py-4 ">
         <div class="flex">
-          <img alt="logo" src="/public/images/logo.svg" />
+          <img alt="logo" src="/public/images/home/white-logo.svg" />
         </div>
         <div class="flex items-center">
-          <ul class="flex md:space-x-3 lg:space-x-6">
-            <li class="py-3">
-              <a
-                href="/src/index.html"
-                class="active text-base font-normal font-deca text-pmc-100"
-                >Home</a
-              >
-            </li>
-            <li class="py-3">
-              <a href="#" class="text-base font-normal font-deca text-white"
-                >History</a
-              >
-            </li>
-            <li class="py-3">
-              <a
-                href="/src/committee.html"
-                class="text-base font-normal font-deca text-white"
-                >Committee</a
-              >
-            </li>
-            <li class="py-3">
-              <a
-                href="/src/members1.html"
-                class="text-base font-normal font-deca text-white"
-                >Members</a
-              >
-            </li>
-            <li class="py-3">
-              <a href="#" class="text-base font-normal font-deca text-white"
-                >Facilities</a
-              >
-            </li>
-            <li class="py-3">
-              <a href="#" class="text-base font-normal font-deca text-white"
-                >Bookings</a
-              >
-            </li>
-            <li class="bg-pmc-100 py-3 px-6">
-              <a href="#" class="text-white text-base font-normal font-deca"
-                >Login</a
-              >
-            </li>
+          <ul class="flex md:space-x-3 lg:space-x-9">
+            <li class="py-3"><a href="/src/index.html" class="menu-link text-white">Home</a></li>
+            <li class="py-3"><a href="/src/history.html" class="menu-link text-white">History</a></li>
+            <li class="py-3"><a href="/src/committee.html" class="menu-link text-white">Committee</a></li>
+            <li class="py-3"><a href="/src/members1.html" class="menu-link text-yellow-500">Members</a></li>
+            <li class="py-3"><a href="/src/facility.html" class="menu-link text-white">Facilities</a></li>
+            <li class="py-3"><a href="/src/booking.html" class="menu-link text-white">Bookings</a></li>
+            <li class="bg-pmc-100 py-3 px-6"><a href="#" class="text-white menu-link">Login</a></li>
           </ul>
         </div>
       </div>
@@ -68,14 +30,14 @@
     <div class="w-full">
       <div class="container mx-auto p-9 md:py-20">
         <div
-          class="flex text-pmc-100 font-deca font-bold text-xl mb-10 tracking-widest"
+          class="flex text-yellow-500 font-deca font-bold text-xl mb-10 tracking-widest"
         >
           MEMBERS
         </div>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4 sm:space-y-12 pb-12 border-y border-gray-200"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 space-y-4 sm:space-y-12 pb-12 border-y border-gray-200 lg:space-x-4"
         >
-          <div class="flex space-x-4 md:space-x-6 pt-12">
+          <div class="flex space-x-4 md:space-x-6 pt-12 lg:pl-4">
             <div class="flex">
               <img
                 class="w-16 h-14 md:w-20 md:h-20 rounded-full"
@@ -266,7 +228,7 @@
             <a
               href="/src/members1.html"
               aria-current="page"
-              class="font-deca font-normal text-base no-underline relative z-10 inline-flex items-center opacity-60 hover:opacity-100 px-4 py-2 focus:z-20"
+              class="font-deca font-normal text-base no-underline relative z-10 inline-flex items-center text-gray-500 opacity-60 hover:opacity-100 px-4 py-2 focus:z-20"
               >1</a
             >
             <a
@@ -300,78 +262,49 @@
     </div>
     <!-- footer starts -->
     <div class="w-full bg-black hidden md:flex">
-      <div class="container mx-auto p-9 md:py-20">
-        <div class="grid grid-cols-4">
-          <div class="flex">
-            <img alt="facility img" src="/public/images/logo.svg" />
-          </div>
-          <div class="flex">
-            <div class="flex space-x-4">
-              <div class="relative">
-                <a href=""
-                  ><img
-                    class="opacity-100 hover:opacity-0"
-                    alt="facility img"
-                    src="/public/images/fb.svg"
-                /></a>
-                <div class="top-0 h-10 w-12 absolute">
-                  <a href=""
-                    ><img
-                      class="opacity-0 hover:opacity-100"
-                      alt="facility img"
-                      src="/public/images/fb-hover.svg"
-                  /></a>
-                </div>
-              </div>
-              <div class="relative">
-                <a href=""
-                  ><img
-                    class="opacity-100 hover:opacity-0"
-                    alt="facility img"
-                    src="/public/images/instagram.svg"
-                /></a>
-                <div class="top-0 h-10 w-12 absolute">
-                  <a href=""
-                    ><img
-                      class="opacity-0 hover:opacity-100"
-                      alt="facility img"
-                      src="/public/images/instagram-hover.svg"
-                  /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <div class="flex space-x-4">
-              <img alt="facility img" src="/public/images/phone.svg" />
-              <p class="text-white text-sm font-deca tracking-wide">
-                +8801876564738
-              </p>
-              <p></p>
-            </div>
-
-            <div class="flex space-x-4 py-3">
-              <img alt="facility img" src="/public/images/map-marker-alt.svg" />
-              <p class="text-white text-sm font-deca tracking-wide">
-                Sher e bangla nagar, Dhaka 1207
-              </p>
-            </div>
-            <div class="flex space-x-4">
-              <img alt="facility img" src="/public/images/envelope.svg" />
-              <p class="text-white text-sm font-deca tracking-wide">
-                Email: mpclub@gmail.com
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col items-end space-y-3">
-            <p class="text-white text-sm font-deca tracking-wide">
-              Designed & Developed by
-            </p>
-            <img alt="facility img" src="/public/images/dsi-logo.svg" />
-          </div>
-        </div>
-      </div>
-    </div>
+      <div class="container mx-auto p-9 md:px-0 md:py-20">
+         <div class="grid grid-cols-4">
+           <div class="flex">
+             <img alt="facility img" src="/public/images/white-logo.svg" />
+           </div>
+           <div class="flex items-center">
+               <div class="flex space-x-4">
+                  <div class="relative">
+                   <a href=""><img class="opacity-100 hover:opacity-0" alt="facility img" src="/public/images/fb.svg" /></a>
+                   <div class="top-0 h-10 w-12 absolute">
+                     <a href=""><img class="opacity-0 hover:opacity-100" alt="facility img" src="/public/images/fb-hover.svg" /></a>
+                   </div> 
+                  </div>  
+                  <div class="relative">
+                   <a href=""><img class="opacity-100 hover:opacity-0" alt="facility img" src="/public/images/instagram.svg" /></a>
+                   <div class="top-0 h-10 w-12 absolute">
+                     <a href=""><img class="opacity-0 hover:opacity-100" alt="facility img" src="/public/images/instagram-hover.svg" /></a>
+                   </div> 
+                  </div>  
+             </div>
+           </div>
+           <div class="flex flex-col">
+             <div class="flex space-x-4">
+               <img alt="facility img" src="/public/images/phone.svg" />
+               <p class="text-white text-base font-deca tracking-wide">+8801876564738<p>
+             </div>
+             <div class="flex space-x-4 py-3">
+               <img alt="facility img" src="/public/images/map-marker-alt.svg" />
+               <p class="text-white text-base font-deca tracking-wide">Sher e bangla nagar, Dhaka 1207</p>
+             </div>
+             <div class="flex space-x-4">
+               <img alt="facility img" src="/public/images/envelope.svg" />
+               <p class="text-white text-base font-deca tracking-wide">Email: mpclub@gmail.com</p>
+             </div>
+           </div>
+           <a href="https://www.dsinnovators.com/">
+             <div class="flex flex-col items-end space-y-3">
+                 <p class="text-white text-base font-deca tracking-wide">Designed & Developed by</p>
+                 <img alt="facility img" src="/public/images/dsi-logo.svg" />
+             </div>
+         </a>
+         </div>
+      </div></div>
 
     <!-- footer end -->
   </body>
