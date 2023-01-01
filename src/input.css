@@ -36,13 +36,18 @@
   .my-slider-height {
     height: 700px;
   }
-  .slick-dots{
+  .slick-dots {
     padding-top: 40px;
     display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     list-style: disc !important;
-    
-}
+  }
+  .mobile-nav-list li {
+    display: inline-block;
+  }
+  .show-class {
+    display: block;
+  }
 }

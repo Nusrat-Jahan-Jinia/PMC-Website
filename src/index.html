@@ -19,7 +19,9 @@
     <div class="w-full sticky top-0 left-0 right-0 bg-zinc-50 z-10">
       <div class="hidden container lg:flex mx-auto justify-between py-4 ">
         <div class="flex">
+          <a href="/src/index.html">
           <img alt="logo" src="/public/images/logo.svg" />
+          </a>
         </div>
         <div class="flex items-center">
           <ul class="flex md:space-x-3 lg:space-x-9">
@@ -33,6 +35,31 @@
           </ul>
         </div>
       </div>
+      <div class="flex lg:hidden bg-black mx-auto border-b border-yellow-500 border-opacity-20">
+        <div class="flex w-full py-4 px-9">
+          <div class="flex w-2/4">
+            <a href="/src/index.html">
+            <img alt="facility img" src="/public/images/white-logo.svg" class="" /></a>
+          </div>
+          <div class="flex w-2/4 justify-end space-x-3">
+            <div class="bg-yellow-500 hover:bg-yellow-600 py-3 px-6"><a href="#" class="text-white menu-link">Login</a></div>
+            <img alt="facility img" src="/public/images/hamburg.svg" class="w-9" onclick="showFunc()"/>
+          </div>
+        </div>
+      </div>
+       <!-- mobile nav -->
+       <div class="hidden bg-black px-9 h-screen" id="menu-area">
+        <div class="flex items-center ">
+          <ul class="flex flex-col space-y-6 py-20" id="mobile-nav-list">
+            <li class="py-3"><a href="/src/index.html" class="menu-link text-yellow-500">Home</a></li>
+            <li class="py-3"><a href="/src/history.html" class="menu-link text-white">History</a></li>
+            <li class="py-3"><a href="/src/committee.html" class="menu-link text-white">Committee</a></li>
+            <li class="py-3"><a href="/src/members1.html" class="menu-link text-white">Members</a></li>
+            <li class="py-3"><a href="/src/facility.html" class="menu-link text-white">Facilities</a></li>
+            <li class="py-3"><a href="/src/booking.html" class="menu-link text-white">Bookings</a></li>
+          </ul>
+        </div>
+       </div>
     </div>
     <!-- banner starts -->
     <div class="w-full flex flex-col md:flex-row 2xl:h-screen">
@@ -636,6 +663,15 @@
           ],
         });
       });
+    </script>
+    <script>
+      function showFunc(){
+        console.log("Hamburger is clicked");
+        // this function will execute when hamburger gets clicked
+        var element = document.getElementById("menu-area");
+        element.classList.toggle("show-class");
+        element.classList.toggle("hide-class");
+        }
     </script>
   </body>
 </html>
