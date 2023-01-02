@@ -94,20 +94,20 @@
 .slick-arrow.slick-hidden {
   display: none;
 }
-.slick-arrow{
-    display: none !important;
+.slick-arrow {
+  display: none !important;
 }
-
 
 /* slick custom */
-
-.slick-dots{
-    padding-top: 40px;
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    list-style: disc !important;
-    
+.slick-initialized .slick-slide {
+  padding: 0 10px;
 }
 
+.slick-dots {
+  padding-top: 40px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: disc !important;
+}
