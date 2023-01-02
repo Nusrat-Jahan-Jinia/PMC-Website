@@ -1,21 +1,8 @@
 @charset 'UTF-8';
 /* Slider */
-.slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat;
-}
 
 /* Icons */
-@font-face {
-  font-family: "slick";
-  font-weight: normal;
-  font-style: normal;
 
-  src: url("./fonts/slick.eot");
-  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"),
-    url("./fonts/slick.woff") format("woff"),
-    url("./fonts/slick.ttf") format("truetype"),
-    url("./fonts/slick.svg#slick") format("svg");
-}
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -152,4 +139,23 @@
 }
 .slick-dots li.slick-active button:before {
   background-color: #dc2626;
+}
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+  .slick-dots{
+
+  }
+}
+@media only screen and (max-width: 768px){
+/*Big smartphones [426px -> 600px]*/
+.slick-dots{
+  width: 85%;
+}
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+.slick-dots{
+  width: 70%;
+}
 }
