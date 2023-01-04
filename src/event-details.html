@@ -313,5 +313,15 @@
     element.classList.toggle("hide-class");
     }
 </script>
+<script>
+  history.scrollRestoration = 'manual';
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+</script>
   </body>
 </html>
