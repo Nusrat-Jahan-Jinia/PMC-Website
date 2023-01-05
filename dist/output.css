@@ -1286,6 +1286,14 @@ input:checked + .toggle-bg {
   width: 33.333333%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
 .w-64 {
   width: 16rem;
 }
@@ -1778,21 +1786,6 @@ input:checked + .toggle-bg {
   padding-bottom: 0.625rem;
 }
 
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1831,6 +1824,10 @@ input:checked + .toggle-bg {
 
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.pr-20 {
+  padding-right: 5rem;
 }
 
 .pt-6 {
@@ -1891,6 +1888,10 @@ input:checked + .toggle-bg {
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-normal {
   font-weight: 400;
 }
@@ -1907,10 +1908,6 @@ input:checked + .toggle-bg {
   font-weight: 600;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -1925,10 +1922,6 @@ input:checked + .toggle-bg {
 
 .tracking-widest {
   letter-spacing: 0.1em;
-}
-
-.tracking-tight {
-  letter-spacing: -0.025em;
 }
 
 .text-white {
@@ -2618,16 +2611,16 @@ input:checked + .toggle-bg {
     padding-right: 5rem;
   }
 
-  .md\:pl-9 {
-    padding-left: 2.25rem;
-  }
-
   .md\:pt-0 {
     padding-top: 0px;
   }
 
   .md\:pt-20 {
     padding-top: 5rem;
+  }
+
+  .md\:pl-9 {
+    padding-left: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -2708,10 +2701,6 @@ input:checked + .toggle-bg {
     padding-left: 1rem;
   }
 
-  .lg\:pl-20 {
-    padding-left: 5rem;
-  }
-
   .lg\:pr-20 {
     padding-right: 5rem;
   }
@@ -2736,26 +2725,16 @@ input:checked + .toggle-bg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .xl\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .xl\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(4rem * var(--tw-space-x-reverse));
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .xl\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
+  .xl\:space-x-14 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
-    margin-right: calc(5rem * var(--tw-space-x-reverse));
-    margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .xl\:pl-36 {
-    padding-left: 9rem;
+    margin-right: calc(3.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .xl\:pr-36 {
