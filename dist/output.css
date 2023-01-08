@@ -1883,6 +1883,10 @@ input:checked + .toggle-bg {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .font-deca {
   font-family: Lexend Deca, sans-serif;
 }
