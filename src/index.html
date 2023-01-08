@@ -16,25 +16,29 @@
   <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body class="relative">
+     <!-- web nav starts -->
     <div class="w-full sticky top-0 left-0 right-0 bg-zinc-50 z-10">
       <div class="hidden container lg:flex mx-auto justify-between py-4">
-        <div class="flex">
+        <div class="flex w-1/6">
           <a href="/src/index.html">
-          <img alt="logo" src="/public/images/logo.svg" />
+            <img alt="logo" src="/public/images/logo.svg" />
           </a>
         </div>
-        <div class="flex items-center">
-          <ul class="flex md:space-x-2 lg:space-x-9 xl:space-x-16">
+        <div class="flex items-center w-4/6 justify-end">
+          <ul class="flex md:space-x-2 lg:space-x-9 xl:space-x-12">
             <li class="py-3"><a href="/src/index.html" class="menu-link text-yellow-500">Home</a></li>
             <li class="py-3"><a href="/src/history.html" class="menu-link text-black">History</a></li>
             <li class="py-3"><a href="/src/committee.html" class="menu-link text-black">Executive Committee</a></li>
             <li class="py-3"><a href="/src/members1.html" class="menu-link text-black">Members</a></li>
             <li class="py-3"><a href="/src/facility.html" class="menu-link text-black">Facilities</a></li>
             <li class="py-3"><a href="/src/booking.html" class="menu-link text-black">My Bookings</a></li>
-            <li class="bg-yellow-500 hover:bg-yellow-600 px-6 items-center flex"><a href="#" class="text-white font-extrabold text-base font-deca">Log In</a></li>
           </ul>
         </div>
+        <div class="flex w-1/6 justify-end items-center">
+          <span class="bg-yellow-500 hover:bg-yellow-600 flex items-center justify-center h-10 w-24"><a href="#" class="text-white font-bold text-base font-deca">Log In</a></span>
+        </div>
       </div>
+      <!-- web nav ends -->
       <div class="flex lg:hidden bg-black mx-auto border-b border-yellow-500 border-opacity-20">
         <div class="flex w-full py-4 px-9">
           <div class="flex w-2/4">
