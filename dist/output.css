@@ -989,12 +989,6 @@ input:checked + .toggle-bg {
   }
 }
 
-@media only screen and (max-width: 1536px) and (min-width: 1670px) {
-  .container {
-    width: 1280px !important;
-  }
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2761,5 +2755,12 @@ input:checked + .toggle-bg {
     --tw-space-x-reverse: 0;
     margin-right: calc(3.5rem * var(--tw-space-x-reverse));
     margin-left: calc(3.5rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
